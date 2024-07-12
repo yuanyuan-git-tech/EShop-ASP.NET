@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationCore/ApplicationCore.csproj",
+      "msbuildProject": "../ApplicationCore/ApplicationCore.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "ApplicationCore >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/yuanyuanzhao/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Promotion/Infra/Infra.csproj",
+      "projectName": "Infra",
+      "projectPath": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Promotion/Infra/Infra.csproj",
+      "packagesPath": "/Users/yuanyuanzhao/.nuget/packages/",
+      "outputPath": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Promotion/Infra/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/yuanyuanzhao/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Promotion/ApplicationCore/ApplicationCore.csproj": {
+              "projectPath": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Promotion/ApplicationCore/ApplicationCore.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
