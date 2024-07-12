@@ -44,10 +44,10 @@ public class BaseRepository<T>: IBaseRepository<T> where T: class
         return _dbContext.SaveChangesAsync();    
     }
 
-    public Task<int> UpdateAsync(T entity)
+    public async Task<int> UpdateAsync(T entity)
     {
         _dbContext.Entry(entity).State = EntityState.Modified;
-        return _dbContext.SaveChangesAsync();
+        return await _dbContext.SaveChangesAsync();
     }
 
     public async Task<IEnumerable<T>> GetByConditionAsync(Expression<Func<T, bool>> filter)

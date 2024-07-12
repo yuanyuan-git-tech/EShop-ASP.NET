@@ -14,12 +14,19 @@ public class ShippingDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Shipper>(ConfigureShipper);
-
+        modelBuilder.Entity<ShipperRegion>(ConfigureShipperRegion);
     }
 
     private void ConfigureShipper(EntityTypeBuilder<Shipper> builder)
     {
         builder.HasIndex(s => s.Email)
             .IsUnique();
+    }
+    
+    private void ConfigureShipperRegion(EntityTypeBuilder<ShipperRegion> builder)
+    {
+        builder.HasKey(sr => sr.Id);
+        builder.HasOne(sr => sr.Shipper).WithMany(s => s.ShipperRegions).HasForeignKey(s => s.RegionId);
+        builder.HasOne(sr => sr.Region).WithMany(r => r.ShipperRegions).HasForeignKey(r => r.ShipperId);
     }
 }

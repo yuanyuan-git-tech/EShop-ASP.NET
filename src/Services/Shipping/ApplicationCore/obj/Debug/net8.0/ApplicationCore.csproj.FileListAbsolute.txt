@@ -1,0 +1,15 @@
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/bin/Debug/net8.0/ApplicationCore.deps.json
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/bin/Debug/net8.0/ApplicationCore.dll
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/bin/Debug/net8.0/ApplicationCore.pdb
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.csproj.AssemblyReference.cache
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.AssemblyInfoInputs.cache
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.AssemblyInfo.cs
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.sourcelink.json
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.dll
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/refint/ApplicationCore.dll
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.pdb
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ref/ApplicationCore.dll
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/bin/Debug/net8.0/ApplicationCore.runtimeconfig.json
+/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/Debug/net8.0/ApplicationCore.genruntimeconfig.cache

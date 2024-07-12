@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj": {}
+    "/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj": {}
   },
   "projects": {
-    "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/yuanyuanzhao/.nuget/packages/",
-        "outputPath": "/Users/yuanyuanzhao/AntraProject/EShop-FinalProject/src/Services/Shipping/ApplicationCore/obj/",
+        "outputPath": "/Users/yuanyuanzhao/AntraProject/EShop-ASP.NET/src/Services/Shipping/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yuanyuanzhao/.nuget/NuGet/NuGet.Config"
@@ -39,6 +39,12 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.6.24327.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0-preview.6.24327.4, )"
             }

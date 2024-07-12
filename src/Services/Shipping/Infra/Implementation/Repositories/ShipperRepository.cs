@@ -6,7 +6,7 @@ namespace Infra.Implementation.Repositories;
 
 public class ShipperRepository: BaseRepository<Shipper>, IShipperRepository
 {
-    private IShipperRepository _shipperRepositoryImplementation;
+    // private IShipperRepository _shipperRepositoryImplementation;
 
     public ShipperRepository(ShippingDbContext context) : base(context)
     {

@@ -8,11 +8,11 @@ using Infra.Common;
 
 namespace Infra.Implementation.Services;
 
-public class ShipperService: IShipperService
+public class ShipperService : IShipperService
 {
     private readonly IShipperRepository _shipperRepository;
     private readonly IMapper _mapper;
-    
+
     public ShipperService(IShipperRepository shipperRepository)
     {
         _shipperRepository = shipperRepository;
@@ -27,6 +27,7 @@ public class ShipperService: IShipperService
         {
             throw new Exception("Email is already in use.");
         }
+
         var newShipperEntity = _mapper.Map<Shipper>(model);
         await _shipperRepository.AddAsync(newShipperEntity);
         return newShipperEntity.Id;
@@ -39,6 +40,7 @@ public class ShipperService: IShipperService
         {
             throw new Exception("Shipper does not exist");
         }
+
         _mapper.Map(model, existingShipper);
         return await _shipperRepository.UpdateAsync(existingShipper);
     }
@@ -60,10 +62,18 @@ public class ShipperService: IShipperService
         var shipper = await _shipperRepository.GetByIdAsync(id);
         return _mapper.Map<ShipperResponseModel>(shipper);
     }
-    
 
-    public Task<IEnumerable<ShipperResponseModel>> GetShipperByRegion(string region)
+    public async Task<IEnumerable<ShipperResponseModel>> GetShipperByRegion(string region)
     {
-        return null;
+        Expression<Func<Shipper, bool>> filter = shipper => shipper.ShipperRegions
+            .Any(sr => sr.Region.Name == region);
+        var shippersInRegion = await _shipperRepository.GetByConditionAsync(filter);
+
+        if (!shippersInRegion.Any())
+        {
+            return null;
+        }
+
+        return _mapper.Map<IEnumerable<ShipperResponseModel>>(shippersInRegion);
     }
 }

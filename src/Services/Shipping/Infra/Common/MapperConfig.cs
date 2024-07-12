@@ -12,10 +12,13 @@ public static class MapperConfig
         var config = new MapperConfiguration(cfg =>
         {
             cfg.CreateMap<Shipper, ShipperRequestModel>();
+            cfg.CreateMap<Shipper, ShipperResponseModel>();
 
             
             // Reverse Mapping
             cfg.CreateMap<ShipperRequestModel, Shipper>();
+            cfg.CreateMap<ShipperResponseModel, Shipper>();
+
         });
 
         var mapper = new Mapper(config);
